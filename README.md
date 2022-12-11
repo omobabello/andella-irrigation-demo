@@ -23,7 +23,14 @@ docker exec -it postgres-demo psql -d conference_app -f seed_data.sql -U postgre
 ```
 - Run `IrrigationDemoApplication`. 
 - You can test on `localhost:8080/api/plots`
-- You can find documentation 
+
+
+## Endpoints 
+- Add new plot of land (POST -localhost:8080/api/plots)
+- List all available timeslots for irrigation schedule (GET -localhost:8080/api/time-slots) 
+- Configure a plot of land (POST - localhost:8080/api/irrigation-schedule)
+- Edit a plot of land (PUT - localhost:8080/api/plots)
+- List all plots and it's details (GET - localhost:8080/api/plots)
 
 ## Testing 
 
